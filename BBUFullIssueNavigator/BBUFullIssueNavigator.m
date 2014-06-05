@@ -53,7 +53,7 @@ static BBUFullIssueNavigator *sharedPlugin;
             int height = [sself yl_rowHeightForItem:item outlineView:outlineView];
 
             if ([item subtitle]) {
-                height += [[item subtitle] boundingRectWithSize:NSMakeSize([(NSObject*)sself width], INT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{ NSFontAttributeName: [NSFont fontWithName:@"LucidaGrande" size:11.0] }].size.height;
+                height += [[item subtitle] boundingRectWithSize:NSMakeSize([(NSObject*)sself width], INT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{ NSFontAttributeName: [NSFont systemFontOfSize:11] }].size.height;
             }
             
             return height;
